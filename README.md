@@ -1,68 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Set up project
+2. Create seasondisplay component
+3. Geo location api (above return from app component)
+5. We have to show the laititude in jsx but now we need the
+power of class based components because of mutuple delays and
+such
+6. Create constructor and initialise state in it
+7. Change location of geolocation call to constrcutor
+8. Add error handling properly add callback and add error in jsx
+9. Then Add in if conditions to handle all error cases so it
+looks better (called conditionally handleing error)
+-----------------
+11.Implement the two most important life cycel events
+12.Add the geolocation stuff in componenet did mount
+13.Show that state can be initialized alternatively without
+using this key word outside the conctructpr
+14.Passing state as a prop so pass it to season display, do it
+where you were displaying latitude but now call season display
+which will have the latitude and now will dipaly it
+15. Add in a new function which will calculate which season
+accodrig to the chart and have it disoayed in the consove from
+season depaly
+16. Render the text to the page in jsx according to what season
+it is
+17. Coonect to semantic UI for icons
+18. Fins icons on the website
+19. Add in the ternary if to determine which icon class we want
+20. Create a seasonconfig objectarrya to simplyfy your job
+21. Add in classes icon-left and icon-right and create a new css
+document to use styles with the `${} la la la` for the trick
+22. Position absolute and margins of top bottom right left where
+appropritte
+23. Add class to seasondiaply div by using the same trick ``
+24. .icon-left{
+Page 1
+seasons flow
+ position: absolute;
+ top: 10px;
+ left: 10px;
+}
+.icon-right{
+ position: absolute;
+ bottom: 10px;
+ right: 10px;
+}
+.season-display{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+.winter{
+ background-color: aquamarine;
+}
+.summer{
+ background-color: khaki;
+}
+.season-display.winter i {
+ color: blue;
+}
+.season-display.summer i {
+ color: chocolate;
+}
+25. Add loading spinner from sematic ui
+26. Add in props so loading is rendered dynamic
+27. Spinner.defaultProps={};
